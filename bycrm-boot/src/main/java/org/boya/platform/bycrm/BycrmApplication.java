@@ -1,5 +1,6 @@
 package org.boya.platform.bycrm;
 
+import org.hswebframework.web.authorization.basic.configuration.EnableAopAuthorize;
 import org.hswebframework.web.authorization.listener.event.AuthorizingHandleBeforeEvent;
 import org.hswebframework.web.loggin.aop.EnableAccessLogger;
 import org.mybatis.spring.annotation.MapperScan;
@@ -20,6 +21,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAccessLogger
 @ComponentScan("org.boya.platform.bycrm")
 @MapperScan(basePackages = "org.boya.platform.bycrm.impl")
+@EnableAopAuthorize
 public class BycrmApplication implements ApplicationListener<AuthorizingHandleBeforeEvent> {
 
 	public static void main(String[] args) {
