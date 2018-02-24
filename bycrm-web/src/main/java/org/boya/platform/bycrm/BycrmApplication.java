@@ -10,10 +10,14 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
+/**
+ * main class
+ * @author jzl
+ */
 @EnableAspectJAutoProxy
 @SpringBootApplication
-@EnableCaching //开启缓存
-@EnableAccessLogger //开启访问日志
+@EnableCaching
+@EnableAccessLogger
 @ComponentScan("org.boya.platform.bycrm")
 @MapperScan(basePackages = "org.boya.platform.bycrm.impl")
 public class BycrmApplication implements ApplicationListener<AuthorizingHandleBeforeEvent> {
