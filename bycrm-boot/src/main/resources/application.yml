@@ -25,7 +25,7 @@ spring:
       poolPreparedStatements: true
       maxOpenPreparedStatements: 200
     resources:
-      static-locations: file:./hsweb-ui/,file:./static/,/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/, classpath:/public/
+      static-locations: file:./bycrm-ui/,file:./static/,/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/, classpath:/public/
     http:
       multipart:
         enabled: true

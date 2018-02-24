@@ -10,6 +10,7 @@
 		<module>bycrm-api</module>
 		<module>bycrm-local</module>
 		<module>bycrm-web</module>
+		<module>bycrm-boot</module>
 	</modules>
 	<packaging>pom</packaging>
 
